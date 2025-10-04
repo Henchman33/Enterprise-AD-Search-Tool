@@ -1,6 +1,17 @@
 # ADSearchTool.ps1 - Enterprise GUI for AD searches & exports
 # Run on a Domain Controller or workstation with AD module installed.
 # Requires PowerShell 5.1+ or 7+ (GUI uses WinForms)
+# Version 2 of the Enterprise Active Directory Search Tool - PowerShell GUI Tool "is working" to run on a domain controller with either ISE or higher powershell compatibility.
+
+Save as ADSearchTool_v2.ps1.
+
+Open PowerShell as Administrator.
+
+(Optional) Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass.
+
+Run: .\ADSearchTool_v2.ps1.
+
+Use the UI: select category, type filter (supports * wildcards or LDAP filters), click Run, inspect results, then Export.
 
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
